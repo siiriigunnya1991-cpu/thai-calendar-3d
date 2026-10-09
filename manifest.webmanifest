@@ -1,0 +1,25 @@
+{
+  "name": "ปฏิทินไทย 3D เมืองเก่า",
+  "short_name": "ปฏิทินไทย 3D",
+  "description": "ปฏิทินไทย วันสำคัญ และกิจกรรมส่วนตัว",
+  "lang": "th",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#231b18",
+  "theme_color": "#8b5c25",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
