@@ -1,13 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ปฏิทินไทย 3D เมืองเก่า</title>
-<meta http-equiv="refresh" content="0;url=./index-3.html">
+<meta name="theme-color" content="#B88638">
+<meta name="mobile-web-app-capable" content="yes">
+<title>ปฏิทินไทย 3D</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden}
+iframe{border:0;width:100%;height:100%;display:block}
+</style>
 </head>
 <body>
-<p>กำลังเปิดปฏิทินไทย 3D...</p>
-<a href="./index-3.html">เปิดปฏิทินไทย 3D</a>
+<iframe src="./index-3.html" title="ปฏิทินไทย 3D"></iframe>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .catch(console.error);
+  });
+}
+</script>
 </body>
 </html>
+
